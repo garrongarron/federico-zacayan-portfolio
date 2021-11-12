@@ -1,0 +1,100 @@
+.featured-project{
+    display: flex;
+    flex-flow: row;
+    /* justify-content: center; */
+    align-items: center;
+    /* 
+    align-items: end;
+    height: fit-content; */
+    /* position: relative; */
+    z-index: 1;
+}
+.featured-project .details{
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: end;
+    /* position: absolute; */
+    /* top: 0;
+    right: 0; */
+    width: 60%;
+    height: fit-content;
+    /* pointer-events: none; */
+}
+.featured-project .head{
+    /* margin-top: 2rem; */
+    color: var(--fz-color-1)
+}
+
+.featured-project .head{
+    font-family: monospace;
+    margin-bottom: .5rem;
+}
+.featured-project h2{
+    margin-bottom: 1rem;
+}
+.featured-project .description{
+    text-align: right;
+    background-color: var(--fz-color-3);
+    width: 100%;
+    right: 0;
+    align-self: right;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: var(--fz-color-text);
+}
+
+.featured-project .tags{
+    color: var(--fz-color-text);
+    font-family: monospace;
+    margin: 10px 0;
+}
+.featured-project .tag{
+    padding: .25rem .5rem;
+    background-color: var(--fz-color-2);
+    color: var(--fz-color-3);
+    border-radius: .5rem;
+}
+.featured-project .links{
+    display: flex;
+}
+.featured-project .links a{
+    color: var(--fz-color-0);
+    text-decoration: none;
+    transition: all .5s;
+    padding: .5rem;
+    margin: 0 .125rem ;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--fz-color-4);
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+}
+.featured-project .links a:hover{
+    color: var(--fz-color-1);
+    border: 1px solid var(--fz-color-2);
+}
+.featured-project .links a svg{
+    /* width: 15px; */
+}
+.featured-project .image-container{
+    width: 40%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: fit-content;
+}
+.featured-project .image-container img{
+    width: 100%;
+    filter:  sepia(100%);
+    transition: filter .5s;
+    cursor: pointer;
+}
+/* .featured-project .image-container img:hover{
+    
+} */
+.featured-project:hover  img{
+    filter:  sepia(0%);
+    
+}

@@ -1,0 +1,46 @@
+.experience .description {
+    /* border-top: 1px solid red; */
+    display: none;
+    padding-top: .8rem;
+    margin-left: 1rem;
+}
+
+.experience .description:first-of-type {
+    /* border-top: 1px solid red; */
+    display: block;
+}
+
+.experience .description .position {
+    font-size: 1.5rem;
+}
+
+.experience .description .company {
+    font-size: 1.5rem;
+    color    : var(--fz-color-1);
+}
+
+.experience .description .second-line {
+    color: var(--fz-color-text)
+}
+
+.experience .description .tasklist {
+    margin-top: 1rem;
+    list-style: none;
+    position  : relative;
+    color     : var(--fz-color-text)
+}
+
+.experience .description .tasklist li {
+    margin     : .25rem;
+    margin-left: 2rem;
+}
+
+.experience .description .tasklist li:before {
+    content    : "▹";
+    color      : var(--fz-color-1);
+    font-size  : 1.2rem;
+    position   : absolute;
+    left       : 0px;
+    font-weight: bold;
+    transform: translateY(-1.5px);
+}

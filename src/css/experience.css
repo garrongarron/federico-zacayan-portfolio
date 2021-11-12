@@ -1,0 +1,81 @@
+.container.experience {
+    padding: 0 2rem;
+}
+
+.experience {
+    max-width : 740px;
+    margin    : auto;
+    margin-top: 6rem;
+    position  : relative;
+    /* overflow-x: hidden; */
+    display   : flex;
+}
+.experience > div {
+    width: 100%;
+}
+
+.experience h1 {
+    margin-bottom: 3rem;
+    display      : flex;
+    flex-flow    : row;
+    align-items  : center;
+    width:100%;
+    /* display   : inline-block;
+    width        : auto; */
+}
+.experience h1 span.title {
+    display      : inline-block;
+    min-width    : fit-content;
+    padding-right: 1rem;
+}
+.experience h1:before {
+    content      : "02.";
+    color        : var(--fz-color-1);
+    font-size    : 1.5rem;
+    padding-right: 1rem;
+    font-family  : monospace;
+}
+.experience h1:after {
+    content   : " ";
+    width     : 100%;
+    border-top: 1px solid var(--fz-color-3);
+    display   : inline-block;
+}
+
+/*Table*/
+.experience .table {
+    display: flex;
+    margin : 2rem 0;
+    
+}
+.experience .names,
+.experience .descriptions
+ {
+    list-style: none;
+}
+.experience .names li{
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--fz-color-text);
+    min-width: max-content;
+    border-left: 1px solid var(--fz-color-3);
+}
+.experience .names li:hover{
+    background-color: var(--fz-color-3);
+    color: var(--fz-color-1);
+}
+.experience .names li.selected{
+    color: var(--fz-color-1);
+    border-left: 3px solid var(--fz-color-2);
+    outline: none;
+}
+
+.experience .resume{
+    color: var(--fz-color-1);
+    text-decoration: none;
+    border: 1px solid var(--fz-color-1);
+    padding: .5rem;
+    border-radius: .25rem;
+    display: inline-block;
+    align-items: center;
+}

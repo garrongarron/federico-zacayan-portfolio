@@ -1,0 +1,46 @@
+.container.work {
+    padding: 0 2rem;
+}
+
+.work {
+    max-width : 850px;
+    margin    : auto;
+    margin-top: 6rem;
+    position  : relative;
+    overflow-x: hidden;
+    display   : flex;
+}
+
+
+.work h1 {
+    margin-bottom: 3rem;
+    display      : flex;
+    flex-flow    : row;
+    align-items  : center;
+    width:100%;
+    /* display   : inline-block;
+    width        : auto; */
+    
+}
+.work h1 span.title {
+    display      : inline-block;
+    min-width    : fit-content;
+    padding-right: 1rem;
+}
+.work h1:before {
+    content      : "03.";
+    color        : var(--fz-color-1);
+    font-size    : 1.5rem;
+    padding-right: 1rem;
+    font-family  : monospace;
+}
+.work h1:after {
+    content   : " ";
+    width     : 100%;
+    border-top: 1px solid var(--fz-color-3);
+    display   : inline-block;
+}
+
+.work >div{
+    width : 100%;
+}

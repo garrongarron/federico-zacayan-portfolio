@@ -1,0 +1,29 @@
+.footer{
+    /* position:fixed; */
+    /* bottom: 0; */
+    display: grid;
+    place-items: center;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.footer ul{
+    display: flex;
+    flex-flow: row;
+}
+.footer ul li{
+    list-style: none;
+    padding: 10px;
+    border-radius: .5rem;
+    cursor: pointer;
+    /* border: 1px solid var(--fz-color-3); */
+    color: var(--fz-color-2);
+    margin: .5rem;
+    transition: all .5s;
+    box-shadow: 0 0 1px var(--fz-color-3);
+    background-color: var(--fz-color-4);
+}
+.footer ul li:hover{
+    box-shadow: 0 0 10px var(--fz-color-2);
+    color: var(--fz-color-0);
+}
