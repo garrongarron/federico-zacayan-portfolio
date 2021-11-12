@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/components/UserCard.js", "../src/pages/Landing.js"],
+  "sourcesContent": ["import eventBus from \"../basic/EventBus.js\"\r\n\r\nfunction UserCard(){\r\n    this.goto = () => {\r\n        eventBus.dispatch('routing', '/aboutme.html')\r\n    }\r\n    this.enableEvents(['click'])\r\n    return `\r\n    <div class=\"user-card\" click=\"goto\">\r\n        <img alt=\"Federico Zacayan\" src=\"https://avatars.githubusercontent.com/u/23292341?s=400&u=ad49b3cfa0f860e9e4bf1699030b736f1c3adf77&v=4\">\r\n        <h1  class=\"fz-color-2\">Federico Zacayan</h1>\r\n        <hr/>\r\n        <p>World class developer</p>\r\n    </div>`\r\n}\r\n\r\nexport default UserCard", "import eventBus from \"../basic/EventBus.js\";\r\nimport UserCard from \"../components/UserCard.js\";\r\nimport Footer from \"../components/Footer.js\";\r\n\r\nfunction Landing() {\r\n    this.useEffect(() => {\r\n        //  document.head.querySelector('title').innerHTML = 'AAAAAAAA'\r\n    })\r\n    \r\n    this.enableSubComponents({UserCard, Footer});\r\n    \r\n    return `\r\n    <div class=\"container landing\">\r\n        <div>\r\n            <UserCard></UserCard>\r\n            <Footer></Footer>\r\n        </div>\r\n    </div>\r\n    `\r\n}\r\n\r\nexport default Landing;"],
+  "mappings": "gFAEA,YAAmB,CACf,YAAK,KAAO,IAAM,CACd,EAAS,SAAS,UAAW,kBAEjC,KAAK,aAAa,CAAC,UACZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,YASX,GAAO,GAAQ,ECZf,YAAmB,CACf,YAAK,UAAU,IAAM,IAIrB,KAAK,oBAAoB,CAAC,WAAU,WAE7B;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,MAUX,GAAO,GAAQ",
+  "names": []
+}

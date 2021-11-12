@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/components/Footer.js"],
+  "sourcesContent": ["import eventBus from \"../basic/EventBus.js\"\r\n\r\nfunction Footer() {\r\n    this.goto = (e) => {\r\n        e.currentTarget.dataset.page\r\n        eventBus.dispatch('routing', e.currentTarget.dataset.page)\r\n    }\r\n    this.enableEvents(['click'])\r\n    return `\r\n    <div class=\"footer\">\r\n        <ul>\r\n            <li click=\"goto\" data-page=\"/aboutme.html\">About</li>\r\n            <li click=\"goto\" data-page=\"/experience.html\">Experience</li>\r\n            <li click=\"goto\" data-page=\"/projects.html\">Work</li>\r\n        </ul>\r\n    </div>`\r\n}\r\n\r\nexport default Footer"],
+  "mappings": "wCAEA,YAAkB,CACd,YAAK,KAAO,AAAC,GAAM,CACf,EAAE,cAAc,QAAQ,KACxB,EAAS,SAAS,UAAW,EAAE,cAAc,QAAQ,OAEzD,KAAK,aAAa,CAAC,UACZ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,YAUX,GAAO,GAAQ",
+  "names": []
+}

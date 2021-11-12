@@ -1,13 +1,4 @@
-import eventBus from "../basic/EventBus.js";
-import Footer from '../components/Footer.js'
-
-function AboutMe() {
-    this.enableSubComponents({Footer})
-    this.goto = () => {
-        eventBus.dispatch('routing', '/index.html')
-    }
-    this.enableEvents(['click'])
-    return `
+import{a as n}from"./chunk-OFCXW7NY.js";import{a as s}from"./chunk-QZIEMCIY.js";function a(){return this.enableSubComponents({Footer:n}),this.goto=()=>{s.dispatch("routing","/index.html")},this.enableEvents(["click"]),`
     <div class="container about-me">
         <div>
             <h1><span class="title"> About Me </span></h1>
@@ -39,7 +30,5 @@ function AboutMe() {
             </div>
         </div>
         <div style="position:fixed; bottom:0; width:100%; left:0; z-index:1"><Footer></Footer></div>
-    </div>`
-}
-
-export default AboutMe;
+    </div>`}var i=a;export{i as default};
+//# sourceMappingURL=AboutMe-4PDCSP3G.js.map

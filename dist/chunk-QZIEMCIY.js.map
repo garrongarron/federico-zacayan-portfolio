@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/basic/EventBus.js"],
+  "sourcesContent": ["class EventBus {\r\n    constructor() {\r\n        this.event = {}\r\n    }\r\n    subscribe(eventName, callback) {\r\n        if (!this.event[eventName]) {\r\n            this.event[eventName] = []\r\n        }\r\n        let index = this.event[eventName].indexOf(callback)\r\n        if (index > -1) return\r\n        this.event[eventName].push(callback)\r\n    }\r\n    unSubscribe(eventName, callback) {\r\n        if (!this.event[eventName]) return\r\n        let index = this.event[eventName].indexOf(callback)\r\n        if (index > -1) this.event[eventName].splice(index, 1)\r\n    }\r\n    dispatch(eventName, payload) {\r\n        if (!this.event[eventName]) return\r\n        this.event[eventName].forEach(cb => cb(payload));\r\n    }\r\n}\r\n\r\nconst eventBus = new EventBus()\r\n\r\nexport default eventBus\r\nexport { EventBus }"],
+  "mappings": "AAAA,WAAe,CACX,aAAc,CACV,KAAK,MAAQ,GAEjB,UAAU,EAAW,EAAU,CAK3B,AAJK,KAAK,MAAM,IACZ,MAAK,MAAM,GAAa,IAGxB,EADQ,KAAK,MAAM,GAAW,QAAQ,GAC9B,KACZ,KAAK,MAAM,GAAW,KAAK,GAE/B,YAAY,EAAW,EAAU,CAC7B,GAAI,CAAC,KAAK,MAAM,GAAY,OAC5B,GAAI,GAAQ,KAAK,MAAM,GAAW,QAAQ,GAC1C,AAAI,EAAQ,IAAI,KAAK,MAAM,GAAW,OAAO,EAAO,GAExD,SAAS,EAAW,EAAS,CACzB,AAAI,CAAC,KAAK,MAAM,IAChB,KAAK,MAAM,GAAW,QAAQ,GAAM,EAAG,MAIzC,EAAW,GAAI,GAEd,EAAQ",
+  "names": []
+}

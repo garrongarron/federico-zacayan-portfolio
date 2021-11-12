@@ -1,13 +1,28 @@
-let lazy = async (filename) => {
-    let module = await import(`../pages/${filename}`)
-    return module.default
-}
-
 let routes = {
-    get '#index'(){ return lazy('Landing.js')},
-    get '#projects'(){ return lazy('Work.js')},
-    get '#experience'(){ return lazy('Experience.js')},
-    get '#aboutme'(){ return lazy('AboutMe.js')},
-};
+    get '#index'() {
+        return (async () => {
+            let module = await import('../pages/Landing.js')
+            return module.default
+        })()
+    },
+    get '#projects'() {
+        return (async () => {
+            let module = await import('../pages/Work.js')
+            return module.default
+        })()
+    },
+    get '#experience'() {
+        return (async () => {
+            let module = await import('../pages/Experience.js')
+            return module.default
+        })()
+    },
+    get '#aboutme'() { 
+        return (async () => {
+            let module = await import('../pages/AboutMe.js')
+            return module.default
+        })()
+     },
+}; 
 
 export default routes;
