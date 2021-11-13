@@ -46,8 +46,8 @@
 .experience .table {
     display: flex;
     margin : 2rem 0;
-    
 }
+
 .experience .names,
 .experience .descriptions
  {
@@ -78,4 +78,33 @@
     border-radius: .25rem;
     display: inline-block;
     align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .experience {
+        margin-top: 3rem;
+    }
+    .experience .table {
+        display: flex;
+        flex-flow    :column-reverse;
+    }
+    .experience .names{
+        /* display: flex; */
+        /* flex-flow    :row; */
+        /* overflow-x: scroll; */
+    }
+    .experience .names li{
+        border-left: none;
+        border-top: 1px solid var(--fz-color-3);
+    }
+
+    .experience .names li.selected{
+        /* border-left: none;
+        border-top: 3px solid var(--fz-color-2); */
+    }
+    .experience >div {
+        padding-bottom: 5rem;
+    }
+    
 }

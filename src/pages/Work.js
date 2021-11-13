@@ -31,7 +31,7 @@ function Work() {
             <FeaturedProjectSoccer></FeaturedProjectSoccer>
             <FeaturedProjectsPizarraBasica></FeaturedProjectsPizarraBasica>
             <Projects></Projects>
-            <div style="position:fixed; bottom:50%; width:100%; left:-50%; z-index:1; transform: rotateZ(-90deg) translateY(30px);"><Footer></Footer></div>
+            <div  class="menu"><Footer></Footer></div>
         </div>
         
     </div>`

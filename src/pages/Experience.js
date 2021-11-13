@@ -22,6 +22,7 @@ function Experience() {
                 clear()
                 li.classList.add('selected')
                 content[index].style.display = 'block'
+                window.scrollTo({top: 0, behavior: 'smooth'});
             })
         })
         
@@ -65,7 +66,7 @@ function Experience() {
                 </ul>
             </div>
             <a rel="noreferrer"  href="https://docs.google.com/document/d/1EU_7xFx-MfAn6WwJQ2F1nda9W7dqocwawuvFTKMFdhY/edit" class="resume" target="_blank">Resume</a>
-            <Footer></Footer>
+            <div style="position:fixed; bottom:0; width:100%; left:0; z-index:1"><Footer></Footer></div>
         </div>
     </div>`
 }
