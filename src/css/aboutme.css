@@ -73,7 +73,7 @@
     margin-right: 2rem;
 }
 
-.about-me ul li {
+.about-me .list-container ul li {
     color    : var(--fz-color-text);
     font-size: 1rem;
 }
