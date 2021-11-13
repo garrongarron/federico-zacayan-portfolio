@@ -15,13 +15,11 @@
 }
 
 .experience h1 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     display      : flex;
     flex-flow    : row;
     align-items  : center;
     width:100%;
-    /* display   : inline-block;
-    width        : auto; */
     overflow-x: hidden;
 }
 .experience h1 span.title {
