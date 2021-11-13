@@ -89,13 +89,14 @@
         flex-flow    :column-reverse;
     }
     .experience .names{
-        /* display: flex; */
-        /* flex-flow    :row; */
-        /* overflow-x: scroll; */
+        padding-top: 2rem;
+        border-bottom: 1px solid var(--fz-color-3);
     }
     .experience .names li{
         border-left: none;
         border-top: 1px solid var(--fz-color-3);
+        border-left: 1px solid var(--fz-color-3);
+        border-right: 1px solid var(--fz-color-3);
     }
 
     .experience .names li.selected{
