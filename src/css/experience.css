@@ -22,6 +22,7 @@
     width:100%;
     /* display   : inline-block;
     width        : auto; */
+    overflow-x: hidden;
 }
 .experience h1 span.title {
     display      : inline-block;

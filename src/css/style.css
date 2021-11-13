@@ -19,7 +19,11 @@ body{
     color: var(--fz-color-0);
     background-color: var(--fz-color-4);
 }
-
+@media (max-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+}
 
 .fz-color-1 {
     color: var(--fz-color-1) !important;
