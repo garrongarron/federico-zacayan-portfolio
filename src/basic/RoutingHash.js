@@ -38,12 +38,14 @@ class Routing {
         history.pushState({ page: route }, null, route)
         if (this.prev) this.closePage(this.prev)
         document.body.appendChild(node)
+        window.scrollTo({top: 0, behavior: 'smooth'});
         this.prev = this.cache[route]
     }
     restore = (route) => {
         if (this.prev) this.closePage(this.prev)
         let node = this.cache[route].node
         document.body.appendChild(node)
+        window.scrollTo({top: 0, behavior: 'smooth'});
         this.prev = this.cache[route]
     }
     start() {
