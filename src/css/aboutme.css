@@ -68,7 +68,7 @@
     margin : 2rem 0;
 }
 
-.about-me ul {
+.about-me .list-container ul {
     list-style  : none;
     margin-right: 2rem;
 }
