@@ -13,7 +13,6 @@ function Landing() {
     <div class="container landing">
         <div>
             <UserCard></UserCard>
-            <Footer></Footer>
         </div>
     </div>
     `

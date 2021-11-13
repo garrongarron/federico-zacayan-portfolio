@@ -36,7 +36,7 @@
     color      : var(--fz-color-0) !important;
     text-shadow: 0 0 1px var(--fz-color-3);
     transition : text-shadow .5s;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .landing h1:hover {
@@ -52,7 +52,7 @@
     width        : 100%;
     max-width: 300px;
     border-radius: 50%;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     /* transition   : box-shadow .5s; */
     border: 1px solid var(--fz-color-5);
     /* box-shadow   : 5px 5px 1px var(--fz-color-3); */
