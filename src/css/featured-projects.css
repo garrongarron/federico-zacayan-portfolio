@@ -97,12 +97,6 @@
 
 .featured-project:hover img {}
 
-@media (max-width: 500px) {
-    .featured-project .image-container img {
-        transform: scale(2)
-    }
-}
-
 @media (max-width: 768px) {
     .featured-project {
         padding-bottom: 3rem;
@@ -138,7 +132,7 @@
     .featured-project .image-container img {
         width : 100%;
         filter: sepia(100%) brightness(20%);
-        /* transform: scale(1.5) */
+        transform: scale(1.2)
     }
 
     .featured-project .image-container img:hover {
@@ -148,5 +142,11 @@
 
     .featured-project .links {
         justify-content: start;
+    }
+}
+
+@media (max-width: 500px) {
+    .featured-project .image-container img {
+        transform: scale(2)
     }
 }
